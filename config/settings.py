@@ -29,7 +29,7 @@ SECRET_KEY = '6izd3gmzjuccrxhmme4b1vbjj61en+e6*oi(lrd5!q(edh77wz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com']
 
 
 # Application definition
@@ -95,7 +95,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
 
 #DATABASES = {
