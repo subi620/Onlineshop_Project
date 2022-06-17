@@ -1,6 +1,13 @@
 from django.db import models
 from django.urls import reverse
 # Create your models here.
+from django.contrib.auth.models import AbstractUser
+
+GENDER_C = (
+    ('선택안함', '선택안함'),
+    ('여성', '여성'),
+    ('남성', '남성'),
+)
 
 class Category(models.Model):
     name = models.CharField(max_length=200, db_index=True)
@@ -46,3 +53,4 @@ class Product(models.Model):
 
     def get_absolute_url(self):
         return reverse('shop:product_detail', args=[self.id, self.slug])
+

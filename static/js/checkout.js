@@ -4,18 +4,18 @@ $(function (){
 
     $('.order-form').on('submit',function(e){
         var amount =parseFloat($('.order-form input[name="amount"]').val().replace(',',''));
-        var type =$('.order-form input[name="type"]:checked').val();
+        var type = $('.order-form input[name="type"]:checked').val();
 
         var order_id = AjaxCreatedOrder(e);
 
-        if(order_id ==false){
+        if (order_id ==false){
             alert('주문 생성 실패\n다시 시도해주세요.')
             return false;
         }
 
-        var mechant_id = AjaxStoreTransaction(e, order_id, amount, type);
+        var merchant_id = AjaxStoreTransaction(e, order_id, amount, type);
 
-        if (mechant_id !== ''){
+        if (merchant_id !== ''){
 
             IMP.request_pay({
                 merchant_uid:merchant_id,
@@ -26,16 +26,16 @@ $(function (){
             }, function (rsp){
                 if (rsp.success){
                     var msg='결제가 완료되었습니다.';
-                    msg +='고유ID : '+rsp.imp_uid;
-                    msg +='상점 거래ID: '+rsp.merchant_uid;
-                    msg +='결제 금액: '+rsp.paid_amount;
-                    msg +='카드 승인 번호: '+rsp.apply_num;
+                    msg += '고유ID : '+rsp.imp_uid;
+                    msg += '상점 거래ID: '+rsp.merchant_uid;
+                    msg += '결제 금액: '+rsp.paid_amount;
+                    msg += '카드 승인 번호: '+rsp.apply_num;
 
                     ImpTransaction(e, order_id, rsp.merchant_uid, rsp.imp_uid, rsp.paid_amount);
 
                 } else {
                     var msg= '결제에 실패하였습니다.';
-                    msg +='에러내용: '+rsp.error_msg;
+                    msg += '에러내용: '+rsp.error_msg;
                     console.log(msg);
                 }
             });
@@ -51,13 +51,13 @@ function AjaxCreateOrder(e){
     var request = $.ajax({
         method:"POST",
         url:order_create_url,
-        async:false,
+        async: false,
         data:$('.order-form').serialize()
     });
 
     request.done(function (data){
         if(data.order_id){
-            order_id=data.order_id;
+            order_id = data.order_id;
         }
     });
 

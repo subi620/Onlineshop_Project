@@ -24,6 +24,7 @@ def order_create(request):
                 OrderItem.objects.create(order=order, product=item['product'],
                 price=item['price'],quantity=item['quantity'])
             cart.clear()
+
             return render(request, 'order/created.html', {'order':order})
     else:
         form = OrderCreateForm()
@@ -35,7 +36,7 @@ def order_complete(request):
     return render(request, 'order/created.html', {'order':order})
 
 class OrderCreateAjaxView(View):
-    def post(self,request, *args, **kwargs):
+    def post(self, request, *args, **kwargs):
         if not request.user.is_authenticated:
             return JsonResponse({"authenticated":False}, status=403)
 
@@ -78,11 +79,11 @@ class OrderCheckoutAjaxView(View):
                 amount=amount
             )
         except:
-            merchant_order_id =None
+            merchant_order_id = None
 
         if merchant_order_id is not None:
             data = {
-                "works":True,
+                "works": True,
                 "merchant_id": merchant_order_id
             }
             return JsonResponse(data)

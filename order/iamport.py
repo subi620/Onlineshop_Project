@@ -13,7 +13,7 @@ def get_token():
     req = requests.post(url, data=access_data)
     access_res = req.json()
 
-    print('get_token()--(1): ', data=access_data)
+    #print('get_token()--(1): ', data=access_data)
 
     if access_res['code'] is 0:
         return access_res['response']['access_token']
@@ -41,7 +41,7 @@ def payments_prepare(order_id, amount, *args, **kwargs):
 def find_transaction(order_id, *args, **kwargs):
     access_token = get_token()
     if access_token:
-        url = "https://api.iamport.kr/payments/find"+order_id
+        url = "https://api.iamport.kr/payments/find/"+order_id
 
         headers = {
             'Authorization':access_token

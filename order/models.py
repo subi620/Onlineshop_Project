@@ -19,9 +19,9 @@ class Order(models.Model):
     paid = models.BooleanField(default=False)
 
     coupon = models.ForeignKey(Coupon, on_delete=models.PROTECT,
-                               related_name='order_coupon', null=True, blank=True)
+        related_name='order_coupon', null=True, blank=True)
     discount = models.IntegerField(default=0, validators=[MinValueValidator(0),
-                                                          MaxValueValidator])
+    MaxValueValidator])
 
     class Meta:
         ordering = ['-created']
@@ -77,7 +77,7 @@ class OrderTransactionManager(models.Manager):
 
     def get_transaction(self, merchant_order_id):
         result = find_transaction(merchant_order_id)
-        if result['status']=='paid':
+        if result['status'] == 'paid':
             return result
         else:
             return None
@@ -97,16 +97,16 @@ class OrderTransaction(models.Model):
     class Meta:
         ordering = ['-created']
 
+#시그널을 활용한 결제 검증 함수
 def order_payment_validation(sender, instance, created, *args, **kwargs):
     if instance.transaction_id:
-        import_transaction = OrderTransaction.objects.get_transaction\
-            (merchant_order_id = instance.merchant_order_id)
+        import_transaction = OrderTransaction.objects.get_transaction(merchant_order_id=instance.merchant_order_id)
         merchant_order_id = import_transaction['merchant_order_id']
         imp_id = import_transaction['imp_id']
         amount = import_transaction['amount']
 
         local_transaction = OrderTransaction.objects.filter(merchant_order_id=merchant_order_id,
-        transaction_id = imp_id, amount=amount).exists()
+            transaction_id = imp_id, amount=amount).exists()
 
         if not import_transaction or not local_transaction:
             raise ValueError("비정상 거래입니다.")
