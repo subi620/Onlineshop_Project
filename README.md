@@ -43,7 +43,7 @@
 |책|<img width="70%" height="30%" alt="Book" src="https://user-images.githubusercontent.com/92639359/200462424-c7f65d8c-3bb3-4a90-add9-8d1a2c8a40b3.png">
 |화장품|<img width="70%" height="30%" alt="cos" src="https://user-images.githubusercontent.com/92639359/200462508-b9315983-218c-420d-bcb1-ecf21dd94bd1.png">
 |전자 기기|<img width="70%" height="30%" alt="IT" src="https://user-images.githubusercontent.com/92639359/200462625-cd550454-60a0-475f-8f3d-ca6d06e80672.png">|
-|쿠폰 적용|<img width="70%" height="30%" alt="Coupon" src="https://user-images.githubusercontent.com/92639359/200462770-dcccc1bd-fdc1-4979-861c-07ef6ba3e371.png">|
+|쿠폰 적용 결제|<img width="70%" height="30%" alt="Coupon" src="https://user-images.githubusercontent.com/92639359/200462770-dcccc1bd-fdc1-4979-861c-07ef6ba3e371.png">|
 |제품 상세|<img width="70%" height="30%" alt="Detail" src="https://user-images.githubusercontent.com/92639359/200463439-be1106b1-38f6-417d-ba59-64dd58ed0e8e.png">|
 |장바구니|<img width="70%" height="30%" alt="bag" src="https://user-images.githubusercontent.com/92639359/200463270-a32aa5f5-54b9-4126-9196-25ad8099e86e.png">|
 <br/>
