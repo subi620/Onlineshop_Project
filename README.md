@@ -45,6 +45,7 @@
 |전자 기기|<img width="70%" height="30%" alt="IT" src="https://user-images.githubusercontent.com/92639359/200462625-cd550454-60a0-475f-8f3d-ca6d06e80672.png">|
 |쿠폰 적용|<img width="70%" height="30%" alt="Coupon" src="https://user-images.githubusercontent.com/92639359/200462770-dcccc1bd-fdc1-4979-861c-07ef6ba3e371.png">|
 |제품 상세|<img width="70%" height="30%" alt="Comment" src="https://user-images.githubusercontent.com/92639359/200459555-e382f7f5-f008-4e74-9b9d-374b97918155.png">|
+|장바구니|<img width="70%" height="30%" alt="bag" src="https://user-images.githubusercontent.com/92639359/200459555-e382f7f5-f008-4e74-9b9d-374b97918155.png">|
 <br/>
 
 ## 🔧 Tech Stack
