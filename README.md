@@ -37,7 +37,7 @@
 
 |Page|Run|
 |:--:|:-:|
-|Home|<img width ="70%" height="30%" alt="Home" src="https://user-images.githubusercontent.com/92639359/200458354-825ca8f0-7964-41d3-a16c-8a55e2a17217.png"/>
+|Home|<img width ="70%" height="30%" alt="Home" src="https://user-images.githubusercontent.com/92639359/200462299-bbd058c1-459b-4a1a-bb90-51e04d6b0833.png">|
 |로그인|<img width="70%" height="30%" alt="Login" src="https://user-images.githubusercontent.com/92639359/200462031-8d2f5058-e6bf-42df-bd4d-0e3db26535ba.png">|
 |회원가입|<img width="70%" height="30%" alt="Register" src="https://user-images.githubusercontent.com/92639359/200462163-19bf3197-2bb4-4fd1-b29c-7fe8bd11e2ef.png">|
 |책|<img width="70%" height="30%" alt="RegistPhoto" src="https://user-images.githubusercontent.com/92639359/200459272-b94a5338-ee67-42b4-9660-195ec9b02eab.png">
