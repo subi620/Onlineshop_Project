@@ -41,7 +41,7 @@
 |로그인|<img width="70%" height="30%" alt="Login" src="https://user-images.githubusercontent.com/92639359/200462031-8d2f5058-e6bf-42df-bd4d-0e3db26535ba.png">|
 |회원가입|<img width="70%" height="30%" alt="Register" src="https://user-images.githubusercontent.com/92639359/200462163-19bf3197-2bb4-4fd1-b29c-7fe8bd11e2ef.png">|
 |책|<img width="70%" height="30%" alt="Book" src="https://user-images.githubusercontent.com/92639359/200462424-c7f65d8c-3bb3-4a90-add9-8d1a2c8a40b3.png">
-|화장품|<img width="70%" height="30%" alt="RegistPhoto" src="https://user-images.githubusercontent.com/92639359/200459272-b94a5338-ee67-42b4-9660-195ec9b02eab.png">
+|화장품|<img width="70%" height="30%" alt="cos" src="https://user-images.githubusercontent.com/92639359/200462508-b9315983-218c-420d-bcb1-ecf21dd94bd1.png">
 |전자 기기|<img width="70%" height="30%" alt="DeletePhoto" src="https://user-images.githubusercontent.com/92639359/200459470-e7c077a6-6bb5-45f4-b995-c587dc41f51a.png">|
 |쿠폰 적용|<img width="70%" height="30%" alt="Comment" src="https://user-images.githubusercontent.com/92639359/200459555-e382f7f5-f008-4e74-9b9d-374b97918155.png">|
 |제품|<img width="70%" height="30%" alt="Comment" src="https://user-images.githubusercontent.com/92639359/200459555-e382f7f5-f008-4e74-9b9d-374b97918155.png">|
