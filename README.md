@@ -57,6 +57,6 @@
 <br/>
 
 ## 📝 License
-Copyright © 2021 dstagram
+Copyright © 2022 Onlineshop
 
 <br/>
