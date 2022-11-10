@@ -52,7 +52,7 @@
 - python Django
 - html
 - css
-- heroku
+- heroku 배포
 
 <br/>
 
